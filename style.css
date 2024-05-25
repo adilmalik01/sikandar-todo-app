@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,117 +8,102 @@
 .main-div {
   width: 100%;
   height: 100vh;
-  background: white;
+  background: #171723;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.backgroudImage {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 60%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, rgba(45, 12, 233, 0.7), rgba(240, 23, 204, 0.7)), url('https://images.unsplash.com/photo-1597739239353-50270a473397?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3RyZWV0fGVufDB8fDB8fHww');
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  color: white
 }
 
 
 .todo-div {
-  width: 550px;
-  height: 90%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 580px;
+  height: 84%;
+  position: absolute;
+  top: 15%;
+  background-color: transparent;
+  gap: 30px;
   display: grid;
-  grid-template-rows: 2fr 5fr;
-  background: white;
+  grid-template-rows: 1fr 2fr 8fr;
+  /* background: #22253A; */
 }
 
-.todo-submit {
-  display: grid;
-  grid-template-rows: 1fr 1.5fr 0.2fr;
-
-}
-
-
-.head {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  align-items: center;
-}
-.logo{
-  font-size: 27px;  
-  font-family: "Poetsen One", sans-serif !important; 
-}
-.todo-form-div {
+.input {
+  width: 100%;
+  /* height: 20%; */
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #22253A;
 }
 
-.del-all {
-  & button {
-    width: 70px;
-    height: 30px;
-    border-radius: 4px;
-    border: none;
-    text-transform: capitalize;
-  }
+.input input {
+  width: 85%;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #22253A;
+  height: 100%;
 }
 
-.form-div {
-  border: 1px solid rgba(99, 99, 99, 0.4);
+.input input::placeholder {
+  font-size: 19px;
+}
 
-  width: 80%;
-  height: 60%;
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-
-
-  & input {
-    width: 70%;
-    border-radius: 20px;
-    padding: 0 5px;
-    border: none;
-    outline: none;
-    font-family: 'Archivo', sans-serif;
-    font-size: 17px;
-  }
-
-  & button {
-    border: none;
-    width: 30%;
-    background-color: aquamarine;
-    border-radius: 20px;
-
-  }
+.input button {
+  border-radius: 50%;
+  font-size: 29px;
+  color: rgba(255, 254, 254, 0.8);
 }
 
 
 .todo-result-div {
   overflow: auto;
+  border-radius: 10px;
+
+  width: 100%;
+  background-color: #22253A;
 }
 
-.show {
-  display: flex !important;
-}
-
-.saveTask {
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.hide {
-  display: none !important;
-}
 
 .task {
   width: 90% !important;
-  background: rgb(238, 233, 233);
-  height: 80px;
-  border-radius: 10px;
+  background: transparent;
+  height: 70px;
   padding: 5px 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+  border-bottom: 1px solid white;
   margin-left: 25px;
   display: flex;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 254, 254, 0.8);
   justify-content: center;
   align-items: center;
+}
 
+.icon i {
+  cursor: pointer;
 }
 
 @media (max-width:450px) {
@@ -137,43 +123,23 @@
   font-size: 19px;
 }
 
-.other-btn {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & button {
-    width: 20px;
-    font-size: 17px;
-    background: transparent;
-    border: none;
-    margin: 6px;
-  }
-}
-
-
-
 
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: grey;
+  background-color: #343649;
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: white;
+  background-color: #22253A;
 }
 
 
-.customHidden {
-  display: none;
-}
-
-.visible {
-  display: flex !important;
+.heading {
+  font-size: 35px;
+  font-family: "Aclonica", sans-serif;
+  color: whitesmoke;
 }

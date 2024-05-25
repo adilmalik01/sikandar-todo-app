@@ -59,9 +59,9 @@ const createTodo = () => {
             <div class="text">
               <h1 class="text-[19px] font-semibold">${i + 1}) ${todo}</h1>
             </div>
-            <div class="icon w-[20%] h-full rounded-2xl flex justify-center items-center gap-2">
-              <i id="editBtn" onclick="editTodo(${i})" class="bi bi-pencil-fill text-2xl pointer"></i>
-              <i onclick="deleteTodo(${i})" class="bi bi-trash-fill text-2xl"></i>
+            <div class="icon w-[20%] h-full rounded-2xl flex justify-center items-center gap-4">
+              <i id="editBtn" onclick="editTodo(${i})" class="bi bi-pencil-fill text-1xl "></i>
+              <i onclick="deleteTodo(${i})" class="bi bi-trash-fill text-1xl"></i>
             </div>
           </div>
         `;
